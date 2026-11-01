@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "repository": "Gudui/PrincessPeachShowtimeLocalCoop",
+  "labels": [
+    { "name": "bug", "color": "d73a4a", "description": "Something is not working" },
+    { "name": "enhancement", "color": "a2eeef", "description": "New or improved behavior" },
+    { "name": "alpha", "color": "fbca04", "description": "Applies to the alpha release line" },
+    { "name": "severity: critical", "color": "b60205", "description": "Prevents boot or blocks progression" },
+    { "name": "severity: high", "color": "d93f0b", "description": "Major gameplay defect or softlock" },
+    { "name": "severity: medium", "color": "fbca04", "description": "Defect with a known workaround" },
+    { "name": "severity: low", "color": "c5def5", "description": "Cosmetic or minor defect" },
+    { "name": "input", "color": "1d76db", "description": "Controllers and player routing" },
+    { "name": "respawn", "color": "5319e7", "description": "Death, recovery, and respawn" },
+    { "name": "camera/cutscene", "color": "bfd4f2", "description": "Camera and framing" },
+    { "name": "transition", "color": "0e8a16", "description": "Door, room, or stage transitions" },
+    { "name": "platform: atmosphere", "color": "006b75", "description": "Physical Switch and Atmosphere support" }
+  ],
+  "issues": [
+    {
+      "title": "Camera framing during fast vertical or horizontal room transitions",
+      "labels": ["enhancement", "alpha", "severity: medium", "camera/cutscene"],
+      "body": "When players move quickly through vertical or horizontal stage sections, camera panning can occasionally lag behind the leading player. Further smoothing and bounding improvements are planned."
+    },
+    {
+      "title": "Specialized vehicle/mini-game second player handling",
+      "labels": ["enhancement", "alpha", "severity: low", "transition"],
+      "body": "Certain specialized transformation mini-games (e.g. horse wagon sequences) are originally designed around a single player focus. Further co-op parity refinements will be added in upcoming builds."
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+/artifacts/
+*.user
+*.local
+*.log
+*.zip
+*.sha256
+.vs/
+.vscode/
+build/
